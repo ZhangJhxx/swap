@@ -1,0 +1,153 @@
+div.swap {
+  box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px,
+    rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px;
+  width: 720px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  border-radius: 5%;
+  .symbol {
+    padding: 1rem 1.25rem 0.5rem;
+    width: 100%;
+    color: rgb(86, 90, 105);
+    .sym_wrapper {
+      display: flex;
+      width: 100%;
+      padding: 0px;
+      -webkit-box-align: center;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  .swap_main {
+    width: 100%;
+    padding: 8px;
+    .currency_arrow {
+      padding: 4px;
+      border-radius: 12px;
+      height: 35px;
+      width: 35px;
+      position: relative;
+      margin-top: -14px;
+      margin-bottom: -14px;
+      left: calc(50% - 16px);
+      background-color: rgb(247, 248, 250);
+      border: 4px solid rgb(255, 255, 255);
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .currency {
+      border-radius: 20px;
+      border: 1px solid rgb(237, 238, 242);
+      background-color: rgb(247, 248, 250);
+      width: initial;
+      .input_area {
+        display: flex;
+        flex-flow: row nowrap;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        padding: 1rem 1rem 0.75rem;
+        .currency_name_wrapper{
+          display: flex;
+          flex-direction: column;
+          .balance{
+            padding-top: 5px;
+            font-weight: 500;
+            font-size: 16px;
+            color: rgb(110, 114, 125);
+          }
+        }
+        .currency_name {
+          display: inline-block;
+          text-align: center;
+          font-size: 24px;
+          font-weight: 500;
+          background-color: rgb(255, 255, 255);
+          color: rgb(0, 0, 0);
+          border-radius: 16px;
+          box-shadow: rgb(0 0 0 / 8%) 0px 6px 10px;
+          outline: none;
+          cursor: pointer;
+          user-select: none;
+          border: none;
+          height: 2.4rem;
+          line-height: 2.4rem;
+          width: fit-content;
+          padding: 0px 8px;
+        }
+        input {
+          color: rgb(0, 0, 0);
+          width: 0px;
+          position: relative;
+          font-weight: 500;
+          outline: none;
+          border: none;
+          flex: 1 1 auto;
+          background-color: rgb(247, 248, 250);
+          font-size: 24px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding: 0px;
+          appearance: textfield;
+          text-align: right;
+          filter: none;
+          opacity: 1;
+          transition: opacity 0.2s ease-in-out 0s;
+        }
+      }
+    }
+  }
+  .currency_exchange_rate {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 8px;
+    justify-content: flex-end;
+    .currency_rate {
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+  .wallet_connect {
+    padding-right: 8px;
+    padding-left: 8px;
+    .wallet_btn {
+      user-select: none;
+      padding: 16px;
+      margin-top: 10px;
+      width: 100%;
+      font-weight: 500;
+      text-align: center;
+      border-radius: 20px;
+      outline: none;
+      color: #fff;
+      border: 1px solid transparent;
+      text-decoration: none;
+      display: flex;
+      font-size: 24px;
+      -webkit-box-pack: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      -webkit-box-align: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: rgb(0 0 0 / 8%) 0px 6px 10px;
+      position: relative;
+      background-color: #80c2f8;
+      z-index: 1;
+      will-change: transform;
+      transition: transform 450ms ease 0s;
+      transform: perspective(1px) translateZ(px);
+      &:hover {
+        background-color: #64b5f6;
+      }
+    }
+  }
+}
